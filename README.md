@@ -36,7 +36,7 @@
 
 - Используются иконки:
   - `favicon.ico` — для  браузера
-  - `icons/icon-192.png` и `icons/icon-512.png` — для  PWA
+  - `icons/icon-1.png` и `icons/icon-2.png` — для  PWA
 ## Структура проекта
 index.html # Главная страница 
 style.css # Стили
@@ -44,5 +44,5 @@ app.js # Логика
 manifest.json # Манифест
 service-worker.js # Сервис-воркер для офлайн-режима
 favicon.ico # Иконка для  браузера
-icons/─ icon-192.png # Иконка PWA 192x192
-- icon-512.png # Иконка PWA 512x512
+icons/─ icon-1.png # Иконка PWA 192x192
+- icon-2.png # Иконка PWA 1000x1000
