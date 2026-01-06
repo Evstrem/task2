@@ -1,0 +1,2 @@
+ icon-1.png # Иконка PWA 192x192
+ icon-2.png # Иконка PWA 1000x1000
