@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Password Manager</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Подключение манифеста -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#317EFB">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Менеджер паролей</h1>
+
+    <!-- Форма добавления пароля -->
+    <section id="add-password">
+        <h2>Добавить пароль</h2>
+        <input id="site" placeholder="URL сайта">
+        <input id="login" placeholder="Логин">
+        <input id="password" placeholder="Пароль">
+
+        <h3>Генерация пароля</h3>
+        <label>
+            Длина:
+            <input type="number" id="length" value="12" min="4" max="64">
+        </label>
+        <label>
+            Сложность:
+            <select id="strength">
+                <option value="1">Лёгкий (только буквы)</option>
+                <option value="2">Средний (буквы + цифры)</option>
+                <option value="3">Сложный (буквы + цифры + спецсимволы)</option>
+            </select>
+        </label>
+
+        <button id="generate">Сгенерировать пароль</button>
+        <button id="add">Добавить</button>
+    </section>
+
+    <!-- Список паролей -->
+    <section id="password-list">
+        <h2>Сохранённые пароли</h2>
+        <ul id="list"></ul>
+    </section>
+
+    <!-- JS  -->
+    <script src="app.js"></script>
+</body>
+</html>
